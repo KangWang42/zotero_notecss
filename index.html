@@ -7,52 +7,224 @@
     <title>zoterocss笔记美化各主题</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="https://pic-go-42.oss-cn-guangzhou.aliyuncs.com/img/202410161523803.png" type="image/png">
+    <link href="./src/output.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="title">zoterocss笔记美化主题</h1>
-       <p> <button id="cusbut"  onclick="redirectTo('http://wk8686.top/')" 
-        type="button">返回博客，查看更多内容</button></p>
-        <div class="note">
-            <div class="note-details">
-                <h3>zotero笔记主题CSS-多彩版</h3>
-                <p>作者:Wang</p>
-                 <button onclick="copyCSS('zotero1-彩色.css')">复制CSS</button>
+    <div class="container mx-auto w-full  px-0">
+
+        <button
+            class="ml-8 mb-12 bg-white text-center w-48 rounded-2xl h-14 relative text-black text-xl font-semibold group"
+            type="button" onclick="window.location.href='https://wk8686.top'">
+            <div
+                class="bg-green-400 rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-10 duration-500">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" height="25px" width="25px">
+                    <path d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z" fill="#000000"></path>
+                    <path
+                        d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+                        fill="#000000"></path>
+                </svg>
+            </div>
+            <p class="translate-x-2">Go Back</p>
+        </button>
+
+        <button onclick="window.location.href='https://wk8686.top/archives/zoteroepi93'"
+            class="mb-12 border text-gray-50  duration-300 absolute group cursor-pointer   overflow-hidden h-14 right-1/2 w-48 rounded-md bg-neutral-400 p-2  font-extrabold hover:bg-sky-700">
+            <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150  duration-700 right-12 top-12 bg-yellow-500">
+            </div>
+            <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-12 h-12 rounded-full group-hover:scale-150  duration-700 right-20 -top-6 bg-orange-500">
+            </div>
+            <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-8 h-8   rounded-full group-hover:scale-150  duration-700 right-32 top-6 bg-pink-500">
+            </div>
+            <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-4 h-4   rounded-full group-hover:scale-150  duration-700 right-2 top-12 bg-red-600">
+            </div>
+            <p class="z-10 absolute bottom-2 left-2">查看教程</p>
+        </button>
+
+
+        <div class="grid  grid-cols-3 gap-y-20 pb-32 gap-x-10 ">
+
+            <div class="relative h-auto w-96 mx-auto bg-gray-100 rounded-xl shadow-2xl">
+                <div class="flex items-center p-3">
+                    <div class="px-1">
+                        <span class="w-4 h-4 rounded-full inline-block bg-red-500 cursor-pointer"></span>
+                    </div>
+                    <div class="px-1">
+                        <span class="w-4 h-4 rounded-full inline-block bg-yellow-400 cursor-pointer"></span>
+                    </div>
+                    <div class="px-1">
+                        <span class="w-4 h-4 rounded-full inline-block bg-green-500 cursor-pointer"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-center">
+                        <h1 class="pb-4 text-amber-800">zotero笔记主题CSS-多彩版</h1>
+                        <p>作者:wang</p>
+                    </div>
+                    <div class="pl-8">
+                        <h1 class="text-amber-500 pt-4">插件介绍</h1>
+                        <ol class="text-xs px-3 text-amber-950 font-bold">
+                            <li class=" py-2">标题的边框和颜色</li>
+                            <li class=" pb-2">引用样式的颜色修改，间距调整</li>
+                            <li class=" pb-2">无序列表和有序列表的marker颜色根据层级多彩</li>
+                            <li class=" pb-2">添加列表的左绿边框</li>
+                            <li class=" pb-2">每个一级的列表下边会有分割线</li>
+                            <li class=" pb-2">加粗选用了耀眼的橙灰搭配</li>
+                            <li class=" pb-2">超链接也改了绿色</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="overflow-y-scroll max-h-72">
+                    <img class="w-full" src="https://pic-go-42.oss-cn-guangzhou.aliyuncs.com/img/202405231525656.png"
+                        alt="">
+                </div>
+                <button onclick="copyCSS('zotero1-彩色')"
+                    class="hover:bg-zinc-600 active:bg-zinc-800 absolute  bottom-4 right-12 cursor-pointer bg-zinc-400 px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none">
+                    <svg class="w-5 h-5" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" stroke-linejoin="round" stroke-linecap="round">
+                        </path>
+                    </svg>
+                </button>
+
             </div>
 
-            <img src="https://pic-go-42.oss-cn-guangzhou.aliyuncs.com/img/202405231525656.png" alt="笔记缩略图">
-            <strong class="imgcomment">效果展示</strong>
-        </div>
-        <div class="note">
-            <div class="note-details">
-                <h3>zotero笔记主题CSS-专注版</h3>
-                <p>作者:Wang</p>
-                <button onclick="copyCSS('zotero2-专注版.css')">复制CSS</button>
-            </div>
-            <img src="https://pic-go-42.oss-cn-guangzhou.aliyuncs.com/img/202405231603347.gif" alt="笔记缩略图">
-            <strong class="imgcomment">效果展示</strong>
-        </div>
-        <div class="note">
-            <div class="note-details">
-                <h3>zotero笔记主题CSS-tomatolight</h3>
-                <p>作者:Wang</p>
-                <button onclick="copyCSS('zotero3-tomatolight')">复制CSS</button>
-            </div>
-            <img src="https://pic-go-42.oss-cn-guangzhou.aliyuncs.com/img/202405231629041.gif" alt="笔记缩略图">
-            <strong class="imgcomment">效果展示</strong>
-        </div>
-        <div class="note">
-            <div class="note-details">
-                <h3>zotero笔记主题CSS-greenfocus</h3>
-                <p>作者:Wang</p>
-                <button onclick="copyCSS('zotero4-greenfocus')">复制CSS</button>
-            </div>
-            <img src="https://pic-go-42.oss-cn-guangzhou.aliyuncs.com/img/202405231629041.gif" alt="笔记缩略图">
-            <strong class="imgcomment">效果展示</strong>
-        </div>
+            <div class="relative h-auto w-96 mx-auto bg-gray-100 rounded-xl shadow-2xl">
+                <div class="flex items-center p-3">
+                    <div class="px-1">
+                        <span class="w-4 h-4 rounded-full inline-block bg-red-500 cursor-pointer"></span>
+                    </div>
+                    <div class="px-1">
+                        <span class="w-4 h-4 rounded-full inline-block bg-yellow-400 cursor-pointer"></span>
+                    </div>
+                    <div class="px-1">
+                        <span class="w-4 h-4 rounded-full inline-block bg-green-500 cursor-pointer"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-center">
+                        <h1 class="pb-4 text-amber-800">zotero笔记主题CSS-专注版</h1>
+                        <p>作者:wang</p>
+                    </div>
+                    <div class="pl-8">
+                        <h1 class="text-amber-500 pt-4">插件介绍</h1>
+                        <ol class="text-xs px-3 text-amber-950 font-bold">
+                            <li class=" py-2">标题的颜色，加粗和边框</li>
+                            <li class=" pb-2">引用的卡片化处理，悬浮提示</li>
+                            <li class=" pb-2">列表的marker颜色</li>
+                            <li class=" pb-2">超链接颜色</li>
+                            <li class=" pb-2">加粗样式修改</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="absolute bottom-0 overflow-y-scroll max-h-72">
+                    <img class="w-full" src="https://pic-go-42.oss-cn-guangzhou.aliyuncs.com/img/202405231603347.gif"
+                        alt="">
+                </div>
 
-        <!-- 你可以继续添加更多的笔记框 -->
+                <button onclick="copyCSS('zotero2-专注版')"
+                    class="hover:bg-zinc-600 active:bg-zinc-800 absolute  bottom-4 right-12 cursor-pointer bg-zinc-400 px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none">
+                    <svg class="w-5 h-5" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" stroke-linejoin="round" stroke-linecap="round">
+                        </path>
+                    </svg>
+                </button>
+
+            </div>
+
+            <div class="relative h-auto w-96 mx-auto bg-gray-100 rounded-xl shadow-2xl">
+                <div class="flex items-center p-3">
+                    <div class="px-1">
+                        <span class="w-4 h-4 rounded-full inline-block bg-red-500 cursor-pointer"></span>
+                    </div>
+                    <div class="px-1">
+                        <span class="w-4 h-4 rounded-full inline-block bg-yellow-400 cursor-pointer"></span>
+                    </div>
+                    <div class="px-1">
+                        <span class="w-4 h-4 rounded-full inline-block bg-green-500 cursor-pointer"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-center">
+                        <h1 class="pb-4 text-amber-800">zotero笔记主题CSS-tomatolight</h1>
+                        <p>作者:wang</p>
+                    </div>
+                    <div class="pl-8">
+                        <h1 class="text-amber-500 pt-4">插件介绍</h1>
+                        <ol class="text-xs px-3 text-amber-950 font-bold">
+                            <li class=" py-2">每一级标题的特殊样式，比如二级标题的左边框，三级标题的下划线；以及悬浮变色</li>
+                            <li class=" pb-2">引用的样式修改，绿色温暖色调</li>
+                            <li class=" pb-2"> 列表的颜色设置为橙色主题 </li>
+                            <li class=" pb-2"> 超链接的橙色效果</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="absolute bottom-0 overflow-y-scroll max-h-72">
+                    <img class="w-full" src="https://pic-go-42.oss-cn-guangzhou.aliyuncs.com/img/202405231629041.gif"
+                        alt="">
+                </div>
+
+                <button onclick="copyCSS('zotero3-tomatolight')"
+                    class="hover:bg-zinc-600 active:bg-zinc-800 absolute  bottom-4 right-12 cursor-pointer bg-zinc-400 px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none">
+                    <svg class="w-5 h-5" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" stroke-linejoin="round" stroke-linecap="round">
+                        </path>
+                    </svg>
+                </button>
+
+            </div>
+
+            <div class="relative h-auto w-96 mx-auto bg-gray-100 rounded-xl shadow-2xl">
+                <div class="flex items-center p-3">
+                    <div class="px-1">
+                        <span class="w-4 h-4 rounded-full inline-block bg-red-500 cursor-pointer"></span>
+                    </div>
+                    <div class="px-1">
+                        <span class="w-4 h-4 rounded-full inline-block bg-yellow-400 cursor-pointer"></span>
+                    </div>
+                    <div class="px-1">
+                        <span class="w-4 h-4 rounded-full inline-block bg-green-500 cursor-pointer"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-center">
+                        <h1 class="pb-4 text-amber-800">zotero笔记主题CSS-greenfocus</h1>
+                        <p>作者:wang</p>
+                    </div>
+                    <div class="pl-8">
+                        <h1 class="text-amber-500 pt-4">插件介绍</h1>
+                        <ol class="text-xs px-2 text-amber-950 font-bold">
+                            <li class=" py-2">每一级标题的特殊样式，比如二级标题的左边框，三级标题的下划线；以及悬浮变色</li>
+                            <li class=" pb-2">引用的样式修改，橙色温暖色调</li>
+                            <li class=" pb-2"> 列表的颜色设置为绿色主题 </li>
+                            <li class=" pb-2"> 超链接的绿色效果</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="overflow-y-scroll max-h-72">
+                    <img class="w-full" src="https://pic-go-42.oss-cn-guangzhou.aliyuncs.com/img/202405231629041.gif"
+                        alt="">
+                </div>
+
+                <button onclick="copyCSS('zotero4-greenfocus')"
+                    class=" hover:bg-zinc-600 active:bg-zinc-800 absolute  bottom-4 right-12 cursor-pointer bg-zinc-400 px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none">
+                    <svg class="w-5 h-5" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" stroke-linejoin="round" stroke-linecap="round">
+                        </path>
+                    </svg>
+                </button>
+
+            </div>
+
+
+        </div>
     </div>
 
     <script src="js/script.js">

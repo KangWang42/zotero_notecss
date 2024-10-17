@@ -6,106 +6,19 @@ body {
     margin: 0;
     padding: 0;
 }
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
+
 .title {
     text-align: center;
     margin-bottom: 20px;
     font-family: ChinaL;
 }
-.note {
-    width: 30%;
-    margin: 1.5%;
-    float: left;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+/* From Uiverse.io by themrsami */ 
+/* From Uiverse.io by Yaya12085 */ 
+.container {
+  width: 100%;
+  height: 100%;
+  /* Add your background pattern here */
+  background-image: linear-gradient(#ffffff 1.1rem, #ccc 1.2rem);
+  background-size: 100% 1.2rem;
 }
-.note img {
-    width: 100%;
-    height: auto;
-}
-.note-details {
-    padding: 15px;
-    text-align: center;
-}
-.note-details h3 {
-    margin: 0;
-    font-size: 1.2em;
-}
-.note-details p {
-    color: #777;
-    font-size: 0.9em;
-}
-.note-details button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.note-details button:hover {
-    background-color: #0056b3;
-}
-
-
-strong{
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-img {
-    max-width: 80%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-
-
-button {
-  padding-top: 17px;
-  padding-bottom: 17px;
-  border-radius: 50px;
-  cursor: pointer;
-  border: 0;
-  background-color: #ACD1FC;
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all 0.5s ease;
-  max-width: 80%;
-
-}
-
-button:hover {
-  letter-spacing: 3px;
-  background-color: #ACD1FC;
-  color: #1A365F;
-  box-shadow: #1296DB 0px 7px 29px 0px;
-}
-
-button:active {
-  letter-spacing: 3px;
-  background-color: #ACD1FC;
-  color: #1A365F;
-  box-shadow: rgba(18, 150, 219, 0.3) 0px 0px 0px 0px;
-  transform: translateY(10px);
-  transition: 100ms;
-}
-
-#cusbut:hover {
-  transform: perspective(180px) rotateX(30deg) translateY(2px);
-}
-
-#cusbut:active {
-  transform: perspective(170px) rotateX(36deg) translateY(5px);
-}
+  
