@@ -105,7 +105,7 @@ ul,ol{
 
 ul ul, ol ol{
 font-weight: normal;
-font-size: 0.9em;    
+font-size: 15px;    
 }
 
 ul li:not(ul ul li):not(ul li:first-child){
