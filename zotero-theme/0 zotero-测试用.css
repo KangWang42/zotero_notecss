@@ -57,30 +57,31 @@ strong{
     }
     
 
-h1{
-    font-size: 1.5em!important;
-    color: #1A365F!important;
-    font-weight: 700!important;
+.primary-editor h1{
+    font-size: 1.5em;
+    color: #1A365F;
+    font-weight: 700;
     text-align: center;
 }
 
                   /* 标题样式 */
-h2 {
-    font-size: 1.3em!important;
-    font-weight: bolder!important;
-    color: #1A365F!important;
-    border-bottom: #ccc 2px solid!important;
+.primary-editor h2 {
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #1A365F;
+    border-bottom: #ccc 2px solid;
 }
 
 
-h3 {
-    font-size: 1.2em!important;
-    color: #1A365F!important;
+
+.primary-editor h3 {
+    font-size: 1.2em;
+    color: #1A365F;
 
 }
 
-h4,h5,h6{
-    font-size: 1.1em!important;
+.primary-editor h4,h5,h6{
+    font-size: 1.1em;
     color: black;
 }
 
@@ -193,3 +194,5 @@ img:hover {
         transform: scale(1.05); /* 大屏幕时鼠标悬停放大比例较小 */
     }
 }
+
+
