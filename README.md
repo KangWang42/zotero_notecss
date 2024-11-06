@@ -20,4 +20,4 @@ zotero本身的note样式比较朴素,在编辑器里提供了用于自定义CSS
 
 ## 查看我现在有哪些样式
 
-![](https://pic-go-42.oss-cn-guangzhou.aliyuncs.com/img/202410282102707.webp)
+![](https://pic-go-42.oss-cn-guangzhou.aliyuncs.com/img/202411061648880.webp)
