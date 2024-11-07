@@ -9,7 +9,7 @@ ul {
 
 .primary-editor ul li:not(ul ul li)::marker {
   color: #1d7774 ;
-  font-size: 1.1em;
+  font-size: 16px;
 }
 
 ul,
@@ -20,7 +20,7 @@ ol {
 ul ul,
 ol ol {
   font-weight: normal;
-  font-size: 0.9em;
+  font-size: 14px;
 }
 
 ul li:not(ul ul li):not(ul li:first-child) {
@@ -36,5 +36,4 @@ ul li:not(ul ul li):not(ul li:first-child):hover {
   transition-duration: 100ms;
 
 }
-
 
