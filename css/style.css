@@ -22,3 +22,26 @@ body {
   background-size: 100% 1.2rem;
 }
   
+@media (min-width: 1536px) {
+  .container {
+      max-width: 2000px!important;
+  }
+}
+
+@media  (max-width: 720px) {
+  body > div.container.mx-auto.w-full.px-0.mx-0 > div.absolute.cursor-pointer.right-52.top-4.inline-block.group > svg{
+    display: none;
+  }
+  body > div.container.mx-auto.w-full.px-0.mx-0 > span{
+    display: none;
+  }
+  body > div.container.mx-auto.w-full.px-0.mx-0 > button.ml-20.mb-12.bg-white.text-center.w-48.rounded-2xl.h-14.relative.text-black.text-xl.font-semibold.group{
+    margin-left: 15px;
+  }
+  body > div.container.mx-auto.w-full.px-0.mx-0 > button.left-1\/2.transform.-translate-x-1\/2.inline-block.mb-12.border.text-gray-50.duration-300.absolute.group.cursor-pointer.overflow-hidden.h-14.w-48.rounded-md.bg-neutral-400.p-2.font-extrabold.hover\:bg-sky-700{
+    max-width: 96px;
+    right:10%;
+    left: auto;
+    position: absolute;
+  }
+}
