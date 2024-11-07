@@ -1,198 +1,40 @@
-/*超链接*/
-
-
-
-a,
-a:visited {
-    /* 普通状态和访问过的链接 */
-    color: #4072E5;
-    /* 深绿色 */
-    text-decoration: underline;
-    /* 下划线 */
-}
-
-a:hover,
-a:focus {
-    /* 鼠标悬停和聚焦状态 */
-    color: rgba(255, 69, 0, 0.5);
-    /* 更深的绿色 */
-}
-
-
-
-
-blockquote:hover {
-    color:#495057;
-    background: #F8F9FA;
-    box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
-    position: relative;
-    margin: 14px 0;
-    border: 3px solid hsl(17, 76%, 61%)!important;
-    transform: translateY(4px);
-}
-
-blockquote {
-    color: #495057;
-    background: #F8F9FA;
-    box-shadow: rgb(0 0 0 / 4%) 0px 3px 5px;
-    margin: 14px 0;
-    border: 2px solid #DEE2E6!important;
-    border-radius: 8px;
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.46, 0.95);
-}
-
-/* 改间距 */
-blockquote p{
-   margin: 10px;
-   padding-top: 0px;
-}
-
-
-/* 加粗样式 */
-strong{
-    background-color: rgba(190, 186, 186,0.2);
-    color: #1A365F;
-    font-weight: bold; 
-    font-size: 1.05em;
-    }
-    
-
-.primary-editor h1{
-    font-size: 1.5em;
-    color: #1A365F;
-    font-weight: 700;
-    text-align: center;
-}
-
-                  /* 标题样式 */
-.primary-editor h2 {
-    font-size: 1.3em;
-    font-weight: bolder;
-    color: #1A365F;
-    border-bottom: #ccc 2px solid;
-}
-
-
-
-.primary-editor h3 {
-    font-size: 1.2em;
-    color: #1A365F;
-
-}
-
-.primary-editor h4,h5,h6{
-    font-size: 1.1em;
-    color: black;
-}
-
-
-                                               /* 列表设计 */
-ul{
-    list-style-type:disc;
-}
-
-ul li::marker{
-    color: #70B3B1!important;
-}
-
-ul li:not(ul ul li)::marker{
-    color: #1d7774!important;
-   font-size: 1.1em;
-}
-
-ul,ol{
-  font-weight: bolder;
-}
-
-ul ul, ol ol{
-font-weight: normal;
-font-size: 15px;    
-}
-
-ul li:not(ul ul li):not(ul li:first-child){
- border-top: #688593 2px solid;
- margin-top: 20px;
- padding-top: 15px;
-}
-
-
-.primary-editor .tableWrapper table tr td,.primary-editor .tableWrapper table  {
-    border: none;
-}
-
-.primary-editor .tableWrapper table td  {
-    margin-bottom: 20px;
-}
-
-
-.primary-editor .tableWrapper table tr:first-child td{
-    text-align: center;
-    font-weight: bolder;
-    color: #1A365F;
-    vertical-align: middle;
-    border-top: #1A365F 3px solid;
-    border-bottom: #1A365F 3px solid;
-}
-
-.primary-editor .tableWrapper table tr:last-child td{
-
-    border-bottom: #1A365F 3px solid;
-}
-
-
-.primary-editor .tableWrapper table tr td {
-    min-width: 20%;
-}
-
-.primary-editor .tableWrapper table tr:not(table tr:first-child) td {
-    font-size: 0.9em;
-}
-
-
-
-#editor-container .editor .editor-core  {
-    width: 100%;
-    height: 100%;
-    --color: #E1E1E1;
-    background-color: #F3F3F3;
-    background-image: linear-gradient(#ffffff 1.1rem, #ccc 1.2rem);
-    background-size: 100% 1.2rem;
+/* 列表设计 */
+ul {
+    list-style-type: disc;
   }
-
-.citation {
-    display: none;
+  
+  .primary-editor ul li::marker {
+    color: #70b3b1 ;
+  }
+  
+  .primary-editor ul li:not(ul ul li)::marker {
+    color: #1d7774 ;
+    font-size: 1.1em;
+  }
+  
+  ul,
+  ol {
+    font-weight: bolder;
+  }
+  
+  ul ul,
+  ol ol {
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+  
+  ul li:not(ul ul li):not(ul li:first-child) {
+    border-top: #688593 2px solid;
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+  
+  
+  ul li:not(ul ul li):not(ul li:first-child):hover {
+    border-top: #033650 4px solid;
+    transform-style: smooth;
+    transition-duration: 100ms;
 
   }
   
-.regular-image .resized-wrapper .image {
-    outline: none; /* 将轮廓线设置为不显示 */
-}
-
-
-.primary-editor img{
-    max-width: 100%;           
-    height: auto;              
-    border: 3px solid #7786a1 !important;  
-    border-radius: 10px;        
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-}
-
-
-img:hover {
-    transform: scale(1.2); /* 默认鼠标悬停时放大比例更大 */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-}
-
-/* 媒体查询用于大屏设备，当屏幕宽度大于768px时 */
-@media (min-width: 500px) {
-    .primary-editor img {
-        max-width: 80%; 
-    }
-
-    .primary-editor img:hover {
-        transform: scale(1.05); /* 大屏幕时鼠标悬停放大比例较小 */
-    }
-}
-
 

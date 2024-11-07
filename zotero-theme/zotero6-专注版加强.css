@@ -76,19 +76,18 @@ strong {
   font-size: 1.1em;
   color: black;
 }
-
 /* 列表设计 */
 ul {
   list-style-type: disc;
 }
 
-ul li::marker {
-  color: #70b3b1 !important;
+.primary-editor ul li::marker {
+  color: #70b3b1 ;
 }
 
-ul li:not(ul ul li)::marker {
-  color: #1d7774 !important;
-  font-size: 1.1em;
+.primary-editor ul li:not(ul ul li)::marker {
+  color: #1d7774 ;
+  font-size: 16px;
 }
 
 ul,
@@ -99,7 +98,7 @@ ol {
 ul ul,
 ol ol {
   font-weight: normal;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 ul li:not(ul ul li):not(ul li:first-child) {
@@ -107,6 +106,16 @@ ul li:not(ul ul li):not(ul li:first-child) {
   margin-top: 20px;
   padding-top: 15px;
 }
+
+
+ul li:not(ul ul li):not(ul li:first-child):hover {
+  border-top: #033650 4px solid;
+  transform-style: smooth;
+  transition-duration: 100ms;
+
+}
+
+
 
 
 .primary-editor .tableWrapper table tr td,.primary-editor .tableWrapper table  {
